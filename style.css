@@ -48,24 +48,8 @@
         h1, h2{
             text-align: center;
         }
-       /*ANIMATIONS*/
-        @keyframes logo {
-            from {opacity: .5; }
-            to {opacity: 1; }
-        }
-        @keyframes typing {
-            from {width: 0; }
-            to {width: 33%; }
-        }
-        @keyframes blink {
-            50% { border-color: transparent; }
-        }
-        @media (min-width:961px)  { 
-            /* tablet, landscape iPad, lo-res laptops ands desktops */ 
-            @keyframes typing {
-                from {width: 0; }
-                to {width: 7%; }
-            }
+        .social-media-icon i{
+            color: #ffffff;
         }
         @media (max-width: 640px){
             .socialnetworks-inline{ 
