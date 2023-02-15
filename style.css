@@ -1,14 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-        *{
-            font-family: 'Lato', Arial, sans-serif;
-            color:#080808;
-        }
         html{
-            background: linear-gradient(130deg, #FF5733, #d45f16);
+            background: linear-gradient(130deg, #FF5733, #d45f16) no-repeat;
+            font-family: 'Lato', Arial, sans-serif;
         }
         
-        h1{
-            font-size: 40px;
+        .titles{
+            margin: 20px;
+        }
+        .titles h1{
+            font-size: 4em;
+        }
+        .titles h2{
+            font-size: 2em;
         }
         .container{
             display: flex;
@@ -19,7 +22,8 @@
             flex-direction: column;
         }
         .socialnetworks-inline i{
-            font-size: 30px;
+            font-size: 40px;
+            margin: 15px;
         }
         .socialnetworks-inline{ flex-direction: row; }
         .socialnetworks-inline > *{
@@ -43,7 +47,7 @@
             background: transparent;
             transition: all .3s;
             cursor: pointer;
-            color:#fff;
+            color:#ffffff;
         }
         h1, h2{
             text-align: center;
@@ -51,8 +55,28 @@
         .social-media-icon i{
             color: #ffffff;
         }
+        .footer{
+            text-align: center;
+            color: #ffffff;
+            margin: 20px;
+        }
         @media (max-width: 640px){
+            .container{
+                margin: 30px;
+            }
             .socialnetworks-inline{ 
-                display: inline-block;
+                display: flex;
+            }
+            .titles h1{
+                font-size: 3em;
+            }
+            .titles h2{
+                font-size: 1.5em;
+            }
+            .logo img{
+                width: 70%;
+            }
+            .socialnetworks a{
+                font-size: 2em;
             }
         }
