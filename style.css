@@ -9,9 +9,11 @@
         }
         .titles h1{
             font-size: 4em;
+            color: #ffffff;
         }
         .titles h2{
             font-size: 2em;
+            color: #ffffff;
         }
         .container{
             display: flex;
@@ -73,9 +75,9 @@
             .titles h2{
                 font-size: 1.5em;
             }
-            .logo img{
+            /* .logo img{
                 width: 70%;
-            }
+            } */
             .socialnetworks a{
                 font-size: 2em;
             }
