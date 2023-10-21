@@ -1,19 +1,19 @@
         html{
-            background: linear-gradient(130deg, #FF5733, #d45f16) no-repeat;
+            /* background: linear-gradient(130deg, #FF5733, #d45f16) no-repeat; */
             font-family: Helvetica, sans-serif, Arial;
         }
-        
+
         .titles{
             margin: 20px;
         }
         .titles h1{
-            font-size: 4em;
-            color: #ffffff;
+            font-size: 3em;
+            color: #000000;
         }
-        .titles h2{
+        /* .titles h2{
             font-size: 2em;
-            color: #ffffff;
-        }
+            color: #000000;
+        } */
         .container{
             display: flex;
             flex-direction: row;
@@ -34,8 +34,8 @@
             padding: 20px 40px;
             margin-bottom: 15px;
             width: 250px;
-            background-color: #c70039;
-            border:1px solid #ffffff;
+            background-color: #D45F16;
+            border:1px solid #D45F16;
             border-radius: 30px;
             text-decoration: none;
             text-align: center;
@@ -48,17 +48,17 @@
             background: transparent;
             transition: all .3s;
             cursor: pointer;
-            color:#ffffff;
+            color:#000000;
         }
         h1, h2{
             text-align: center;
         }
         .social-media-icon i{
-            color: #ffffff;
+            color: #D45F16;
         }
         .footer{
             text-align: center;
-            color: #ffffff;
+            color: #000000;
             margin: 20px;
         }
         @media (max-width: 640px){
