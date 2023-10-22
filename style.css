@@ -69,15 +69,15 @@
                 display: flex;
             }
             .titles h1{
-                font-size: 3em;
+                font-size: 2em;
             }
-            .titles h2{
+            /* .titles h2{
                 font-size: 1.5em;
-            }
+            } */
             /* .logo img{
                 width: 70%;
             } */
             .socialnetworks a{
-                font-size: 2em;
+                font-size: 1em;
             }
         }
