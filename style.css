@@ -67,6 +67,7 @@
             }
             .socialnetworks-inline{ 
                 display: flex;
+                flex-wrap: wrap
             }
             .titles h1{
                 font-size: 2em;
@@ -78,6 +79,6 @@
                 width: 70%;
             } */
             .socialnetworks a{
-                font-size: 1em;
+                font-size: 2em;
             }
         }
