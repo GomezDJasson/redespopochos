@@ -1,38 +1,49 @@
+        /* *{
+            border: 2px solid red;
+        } */
+        
         html{
-            /* background: linear-gradient(130deg, #FF5733, #d45f16) no-repeat; */
             font-family: Helvetica, sans-serif, Arial;
+            box-sizing: border-box;
         }
 
         .titles{
             margin: 20px;
+            text-align: center;
         }
         .titles h1{
             font-size: 3em;
             color: #000000;
         }
-        /* .titles h2{
-            font-size: 2em;
-            color: #000000;
-        } */
         .container{
             display: flex;
             flex-direction: row;
             align-items: center;
             justify-content: center;
             margin: 15px;
+            padding: 15px;
             flex-direction: column;
         }
         .socialnetworks-inline i{
-            font-size: 40px;
+            font-size: 100px;
             margin: 15px;
+            padding: 15px;
+            border: 1px solid;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px #CCC;
         }
-        .socialnetworks-inline{ flex-direction: row; }
-        .socialnetworks-inline > *{
-            padding-right: 15px;
+
+        .socialnetworks-inline{ 
+            flex-direction: row;
         }
+
+        .social-media-icon i{
+            color: #D45F16;
+        }
+
         .socialnetworks a{
             padding: 20px 40px;
-            margin-bottom: 15px;
+            margin-bottom: 10px;
             width: 250px;
             background-color: #D45F16;
             border:1px solid #D45F16;
@@ -50,12 +61,7 @@
             cursor: pointer;
             color:#000000;
         }
-        h1, h2{
-            text-align: center;
-        }
-        .social-media-icon i{
-            color: #D45F16;
-        }
+
         .footer{
             text-align: center;
             color: #000000;
@@ -63,22 +69,19 @@
         }
         @media (max-width: 640px){
             .container{
-                margin: 30px;
+                margin: 10px;
             }
             .socialnetworks-inline{ 
                 display: flex;
-                flex-wrap: wrap
+                flex-wrap: wrap;
+            }
+            .socialnetworks-inline i{ 
+                font-size: 40px;
             }
             .titles h1{
                 font-size: 2em;
             }
-            /* .titles h2{
-                font-size: 1.5em;
-            } */
-            /* .logo img{
-                width: 70%;
-            } */
             .socialnetworks a{
-                font-size: 2em;
+                font-size: 1,5em;
             }
         }
