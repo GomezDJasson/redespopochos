@@ -400,14 +400,14 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(244, 81, 42, 0.35)
+    rgba(244, 81, 42, 0.62)
   );
 }
 
 .section-line:last-child {
   background: linear-gradient(
     90deg,
-    rgba(244, 81, 42, 0.35),
+    rgba(244, 81, 42, 0.62),
     transparent
   );
 }
@@ -467,6 +467,42 @@
   display: grid;
   place-items: center;
   color: #f4512a;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(244, 81, 42, 0.12) 0%,
+    rgba(244, 81, 42, 0.06) 42%,
+    transparent 72%
+  );
+  filter: drop-shadow(0 0 10px rgba(244, 81, 42, 0.28));
+}
+
+.shop-art::before {
+  content: "";
+  position: absolute;
+  inset: 4px;
+  border: 1px solid rgba(244, 81, 42, 0.28);
+  border-radius: 50%;
+  box-shadow:
+    0 0 16px rgba(244, 81, 42, 0.25),
+    0 0 32px rgba(244, 81, 42, 0.14);
+  pointer-events: none;
+}
+
+.shop-art::after {
+  content: "";
+  position: absolute;
+  inset: -14px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(244, 81, 42, 0.16) 0%,
+    rgba(244, 81, 42, 0.08) 38%,
+    transparent 72%
+  );
+  filter: blur(8px);
+  z-index: -1;
+  pointer-events: none;
 }
 
 .shop-art svg {
@@ -597,10 +633,9 @@
   padding: 0 22px;
   border: 1px solid rgba(39, 133, 224, 0.30);
   border-radius: 999px;
-  color: rgba(239, 250, 247, 0.9);
-  background: rgba(255, 255, 255, 0.035);
+  color: #40505b;
+  background: #ffffff;
   box-shadow: 0 8px 22px rgba(23, 35, 63, 0.08);
-  backdrop-filter: blur(10px);
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 700;
@@ -733,15 +768,13 @@
     flex: 0 0 76px;
     display: grid;
     place-items: center;
-    color: #72e2ba;
+    color: #f4512a;
   }
 
   .shop-art svg {
     width: 42px;
     height: 42px;
-    filter:
-      drop-shadow(0 0 7px rgba(40, 200, 145, 0.75))
-      drop-shadow(0 0 18px rgba(40, 200, 145, 0.4));
+    filter: drop-shadow(0 0 8px rgba(244, 81, 42, 0.32));
   }
 
   .shop-content strong {
