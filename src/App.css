@@ -378,7 +378,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: rgba(235, 249, 246, 0.78);
+  color: #5f6b75;
   font-size: 0.75rem;
   font-weight: 800;
   letter-spacing: 0.28em;
@@ -389,33 +389,27 @@
 .shopping-heading-icon {
   width: 17px;
   height: 17px;
-  color: #72e2ba;
-  filter:
-    drop-shadow(0 0 6px rgba(40, 200, 145, 0.65))
-    drop-shadow(0 0 12px rgba(40, 200, 145, 0.35));
+  color: #f4512a;
+  filter: drop-shadow(0 0 7px rgba(244, 81, 42, 0.35));
 }
 
 .section-line {
   height: 1px;
   flex: 1;
   max-width: 150px;
-  background:
-    linear-gradient(
-      90deg,
-      transparent,
-      rgba(114, 226, 186, 0.38),
-      rgba(102, 183, 255, 0.28)
-    );
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(244, 81, 42, 0.35)
+  );
 }
 
 .section-line:last-child {
-  background:
-    linear-gradient(
-      90deg,
-      rgba(102, 183, 255, 0.28),
-      rgba(114, 226, 186, 0.38),
-      transparent
-    );
+  background: linear-gradient(
+    90deg,
+    rgba(244, 81, 42, 0.35),
+    transparent
+  );
 }
 
 .shop-card {
@@ -426,23 +420,15 @@
   align-items: center;
   gap: 18px;
   padding: 18px 20px;
-  border: 1px solid rgba(114, 226, 186, 0.25);
+  border: 1px solid rgba(244, 81, 42, 0.22);
   border-radius: 26px;
-  color: #fff;
-  background:
-    linear-gradient(
-      135deg,
-      rgba(40, 200, 145, 0.14),
-      rgba(38, 125, 205, 0.11)
-    ),
-    rgba(255, 255, 255, 0.035);
+  color: #17233f;
+  background: #ffffff;
   box-shadow:
-    0 18px 40px rgba(0, 0, 0, 0.28),
-    0 0 25px rgba(40, 200, 145, 0.06),
-    inset 0 1px rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(14px);
-  overflow: visible;
+    0 16px 34px rgba(23, 35, 63, 0.10),
+    0 0 24px rgba(244, 81, 42, 0.06);
   text-decoration: none;
+  overflow: visible;
   transition:
     transform 220ms ease,
     border-color 220ms ease,
@@ -454,25 +440,23 @@
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  background:
-    linear-gradient(
-      110deg,
-      rgba(255, 255, 255, 0.08),
-      transparent 35%
-    );
+  background: linear-gradient(
+    110deg,
+    rgba(244, 81, 42, 0.05),
+    transparent 38%
+  );
   pointer-events: none;
 }
 
 .shop-card:hover {
   transform: translateY(-5px);
-  border-color: rgba(114, 226, 186, 0.5);
+  border-color: rgba(244, 81, 42, 0.45);
   box-shadow:
-    0 24px 48px rgba(0, 0, 0, 0.34),
-    0 0 35px rgba(40, 200, 145, 0.12),
-    inset 0 1px rgba(255, 255, 255, 0.13);
+    0 22px 42px rgba(23, 35, 63, 0.14),
+    0 0 28px rgba(244, 81, 42, 0.10);
 }
 
-/* Icono luminoso de la tienda */
+/* Icono de la tienda */
 
 .shop-art {
   position: relative;
@@ -482,15 +466,13 @@
   flex: 0 0 76px;
   display: grid;
   place-items: center;
-  color: #72e2ba;
+  color: #f4512a;
 }
 
 .shop-art svg {
   width: 42px;
   height: 42px;
-  filter:
-    drop-shadow(0 0 7px rgba(40, 200, 145, 0.75))
-    drop-shadow(0 0 18px rgba(40, 200, 145, 0.4));
+  filter: drop-shadow(0 0 8px rgba(244, 81, 42, 0.32));
 }
 
 .shop-content {
@@ -506,10 +488,11 @@
 .shop-content strong {
   font-size: 1.08rem;
   font-weight: 800;
+  color: #17233f;
 }
 
 .shop-content span {
-  color: rgba(235, 249, 246, 0.6);
+  color: #5f6b75;
   font-size: 0.84rem;
 }
 
@@ -519,7 +502,7 @@
   flex: 0 0 auto;
   width: 23px;
   height: 23px;
-  color: rgba(235, 249, 246, 0.65);
+  color: #7a8791;
   transition:
     transform 200ms ease,
     color 200ms ease;
@@ -527,7 +510,7 @@
 
 .shop-card:hover .shop-arrow {
   transform: translate(3px, -3px);
-  color: #fff;
+  color: #f4512a;
 }
 
 /* Contact */
@@ -540,7 +523,7 @@
 
 .contact-title {
   margin: 0;
-  color: rgba(235, 249, 246, 0.78);
+  color: #5f6b75;
   font-size: 0.85rem;
   font-weight: 800;
   letter-spacing: 0.12em;
@@ -573,14 +556,11 @@
   gap: 10px;
   min-height: 46px;
   padding: 0 22px;
-  border: 1px solid rgba(114, 226, 186, 0.35);
+  border: 1px solid rgba(37, 211, 102, 0.35);
   border-radius: 999px;
-  color: rgba(239, 250, 247, 0.9);
-  background: rgba(255, 255, 255, 0.035);
-  box-shadow:
-    0 0 18px rgba(40, 200, 145, 0.08),
-    inset 0 1px rgba(255, 255, 255, 0.08);
-  backdrop-filter: blur(10px);
+  color: #40505b;
+  background: #ffffff;
+  box-shadow: 0 8px 22px rgba(23, 35, 63, 0.08);
   text-decoration: none;
   font-size: 0.85rem;
   font-weight: 700;
@@ -594,20 +574,16 @@
 .whatsapp-button svg {
   width: 20px;
   height: 20px;
-  color: #72e2ba;
-  filter:
-    drop-shadow(0 0 6px rgba(40, 200, 145, 0.7))
-    drop-shadow(0 0 12px rgba(40, 200, 145, 0.35));
+  color: #25d366;
+  filter: drop-shadow(0 0 6px rgba(37, 211, 102, 0.35));
 }
 
 .whatsapp-button:hover,
 .whatsapp-button:focus-visible {
   transform: translateY(-3px);
-  border-color: rgba(114, 226, 186, 0.7);
-  color: #fff;
-  box-shadow:
-    0 0 22px rgba(40, 200, 145, 0.16),
-    0 8px 24px rgba(0, 0, 0, 0.2);
+  border-color: rgba(37, 211, 102, 0.65);
+  color: #17233f;
+  box-shadow: 0 10px 26px rgba(37, 211, 102, 0.12);
   outline: none;
 }
 
@@ -619,13 +595,11 @@
   gap: 10px;
   min-height: 46px;
   padding: 0 22px;
-  border: 1px solid rgba(102, 183, 255, 0.35);
+  border: 1px solid rgba(39, 133, 224, 0.30);
   border-radius: 999px;
   color: rgba(239, 250, 247, 0.9);
   background: rgba(255, 255, 255, 0.035);
-  box-shadow:
-    0 0 18px rgba(102, 183, 255, 0.08),
-    inset 0 1px rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 22px rgba(23, 35, 63, 0.08);
   backdrop-filter: blur(10px);
   text-decoration: none;
   font-size: 0.85rem;
@@ -640,20 +614,16 @@
 .email-button svg {
   width: 20px;
   height: 20px;
-  color: #66b7ff;
-  filter:
-    drop-shadow(0 0 6px rgba(102, 183, 255, 0.7))
-    drop-shadow(0 0 12px rgba(102, 183, 255, 0.35));
+  color: #2785e0;
+  filter: drop-shadow(0 0 6px rgba(39, 133, 224, 0.30));
 }
 
 .email-button:hover,
 .email-button:focus-visible {
   transform: translateY(-3px);
-  border-color: rgba(102, 183, 255, 0.7);
-  color: #fff;
-  box-shadow:
-    0 0 22px rgba(102, 183, 255, 0.16),
-    0 8px 24px rgba(0, 0, 0, 0.2);
+  border-color: rgba(39, 133, 224, 0.60);
+  color: #17233f;
+  box-shadow: 0 10px 26px rgba(39, 133, 224, 0.10);
   outline: none;
 }
 
