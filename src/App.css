@@ -2,11 +2,8 @@
   position: relative;
   min-height: 100vh;
   overflow: hidden;
-  background:
-    radial-gradient(circle at 20% 20%, rgba(39, 190, 139, 0.18), transparent 30%),
-    radial-gradient(circle at 80% 75%, rgba(44, 129, 222, 0.18), transparent 32%),
-    linear-gradient(135deg, #071b19 0%, #0a2425 48%, #071a29 100%);
-  color: #fff;
+  background: #ffffff;
+  color: #17212b;
 }
 
 .container {
@@ -89,22 +86,22 @@
   align-items: center;
   justify-content: center;
 
-  border: 1px solid rgba(114, 226, 186, 0.75);
+  border: 1px solid rgba(244, 81, 42, 0.75);
   border-radius: 50%;
 
   background:
     radial-gradient(
       circle,
-      rgba(40, 200, 145, 0.12),
-      rgba(30, 127, 202, 0.06) 55%,
+      rgba(244, 81, 42, 0.10),
+      rgba(244, 81, 42, 0.04) 55%,
       rgba(255, 255, 255, 0.02) 75%
     );
 
   box-shadow:
-    0 0 18px rgba(40, 200, 145, 0.4),
-    0 0 42px rgba(40, 200, 145, 0.24),
-    0 0 70px rgba(30, 127, 202, 0.16),
-    0 20px 55px rgba(0, 0, 0, 0.4);
+    0 0 18px rgba(244, 81, 42, 0.4),
+    0 0 42px rgba(244, 81, 42, 0.24),
+    0 0 70px rgba(244, 81, 42, 0.12),
+    0 20px 55px rgba(0, 0, 0, 0.12);
 
   backdrop-filter: blur(10px);
   transition:
@@ -153,7 +150,7 @@
 
 .profile-header h1 {
   margin: 0;
-  color: #fff;
+  color: #17233f;
   font-size: clamp(2.3rem, 8vw, 3.5rem);
   line-height: 1;
   font-weight: 850;
@@ -163,14 +160,14 @@
 
 .profile-description {
   margin: 11px 0 0;
-  color: #72e2ba;
+  color: #f4512a;
   font-size: 1.05rem;
   font-weight: 700;
 }
 
 .profile-tagline {
   margin: 6px 0 0;
-  color: rgba(235, 249, 246, 0.62);
+  color: #5f6b75;
   font-size: 0.92rem;
 }
 
@@ -188,7 +185,7 @@
   z-index: 1;
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 8px 14px;
 }
 
