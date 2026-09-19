@@ -34,7 +34,7 @@
   height: 420px;
   top: -180px;
   left: -180px;
-  background: rgba(27, 204, 143, 0.12);
+  background: rgba(244, 81, 42, 0.06);
 }
 
 .page::after {
@@ -42,7 +42,7 @@
   height: 460px;
   right: -220px;
   bottom: -220px;
-  background: rgba(39, 133, 224, 0.13);
+  background: rgba(244, 81, 42, 0.05);
 }
 
 .background-glow {
@@ -65,8 +65,8 @@
   height: 5px;
   top: 28%;
   right: 15%;
-  background: #66b7ff;
-  box-shadow: 0 0 16px rgba(102, 183, 255, 0.8);
+  background: #f4512a;
+  box-shadow: 0 0 16px rgba(244, 81, 42, 0.65);
 }
 
 /* Profile */
@@ -193,7 +193,7 @@
   position: absolute;
   z-index: 0;
   inset: 8% 3% 7%;
-  border: 1px solid rgba(70, 120, 255, 0.22);
+  border: 1px solid rgba(244, 81, 42, 0.12);
   border-radius: 50%;
   transform: rotate(-7deg);
   pointer-events: none;
@@ -229,7 +229,6 @@
 .social-tile:hover,
 .social-tile:focus-visible {
   transform: translateY(-10px) scale(1.08);
-  filter: brightness(1.15);
   outline: none;
 }
 
@@ -258,8 +257,7 @@
 
   transition:
     transform 0.35s cubic-bezier(0.22, 1, 0.36, 1),
-    box-shadow 0.35s ease,
-    background 0.35s ease;
+    box-shadow 0.35s ease;
 }
 
 /* Anillo luminoso */
@@ -279,22 +277,6 @@
     opacity 0.35s ease;
 }
 
-/* Halo */
-
-.social-icon::after {
-  content: '';
-  position: absolute;
-  inset: -22px;
-  border-radius: 32px;
-  background: radial-gradient(
-    ellipse,
-    var(--glow) 0%,
-    transparent 68%
-  );
-  opacity: 0.28;
-  filter: blur(8px);
-  z-index: -1;
-}
 
 /* Hover */
 
@@ -306,8 +288,6 @@
     rotateY(0deg)
     translateY(-5px)
     scale(1.08);
-
-  background: #ffffff;
 
   box-shadow:
     0 12px 24px rgba(0, 0, 0, 0.12),
@@ -356,14 +336,14 @@
 }
 
 .social-link-label {
-  color: rgba(239, 250, 247, 0.72);
+  color: #5f6b75;
   font-size: 0.78rem;
   font-weight: 700;
   transition: color 200ms ease;
 }
 
 .social-tile:hover .social-link-label {
-  color: #fff;
+  color: #17233f;
 }
 
 @keyframes social-float {
