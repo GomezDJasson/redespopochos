@@ -56,8 +56,8 @@
   height: 7px;
   top: 16%;
   left: 13%;
-  background: #45dca8;
-  box-shadow: 0 0 18px rgba(69, 220, 168, 0.8);
+  background: #f4512a;
+  box-shadow: 0 0 18px rgba(244, 81, 42, 0.8);
 }
 
 .background-glow-two {
@@ -115,11 +115,11 @@
   content: "";
   position: absolute;
   inset: -7px;
-  border: 1px solid rgba(114, 226, 186, 0.45);
+  border: 1px solid rgba(244, 81, 42, 0.45);
   border-radius: 50%;
   box-shadow:
-    0 0 20px rgba(40, 200, 145, 0.38),
-    0 0 42px rgba(40, 200, 145, 0.22);
+    0 0 20px rgba(244, 81, 42, 0.38),
+    0 0 42px rgba(244, 81, 42, 0.22);
   pointer-events: none;
 }
 
@@ -132,8 +132,8 @@
   border-radius: 50%;
   background: radial-gradient(
     circle,
-    rgba(40, 200, 145, 0.18) 0%,
-    rgba(30, 127, 202, 0.1) 38%,
+    rgba(244, 81, 42, 0.18) 0%,
+    rgba(244, 81, 42, 0.10) 38%,
     transparent 70%
   );
   filter: blur(10px);
@@ -244,22 +244,15 @@
   color: var(--accent);
   font-size: 40px;
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.12),
-      rgba(255, 255, 255, 0.025) 35%,
-      rgba(5, 15, 20, 0.72) 75%
-    );
+  background: #ffffff;
 
   box-shadow:
-    0 8px 18px rgba(0, 0, 0, 0.35),
+    0 8px 18px rgba(0, 0, 0, 0.10),
     0 0 20px var(--glow),
     0 0 48px var(--glow),
-    inset 1px 1px 0 rgba(255, 255, 255, 0.16),
-    inset -6px -6px 16px rgba(0, 0, 0, 0.28);
+    inset 1px 1px 0 rgba(255, 255, 255, 0.9);
 
-  backdrop-filter: blur(8px);
+  backdrop-filter: none;
 
   transform: perspective(500px) rotateX(2deg) rotateY(-2deg);
 
@@ -314,21 +307,14 @@
     translateY(-5px)
     scale(1.08);
 
-  background:
-    linear-gradient(
-      145deg,
-      rgba(255, 255, 255, 0.17),
-      rgba(255, 255, 255, 0.035) 35%,
-      rgba(5, 15, 20, 0.78) 75%
-    );
+  background: #ffffff;
 
   box-shadow:
-    0 12px 24px rgba(0, 0, 0, 0.4),
+    0 12px 24px rgba(0, 0, 0, 0.12),
     0 0 28px var(--glow),
     0 0 70px var(--glow),
     0 0 110px var(--glow),
-    inset 1px 1px 0 rgba(255, 255, 255, 0.2),
-    inset -6px -6px 18px rgba(0, 0, 0, 0.3);
+    inset 1px 1px 0 rgba(255, 255, 255, 0.95);
 }
 
 .social-tile:hover .social-icon::before,
@@ -339,28 +325,34 @@
 
 /* Colores de las redes */
 
-.social-instagram {
-  --accent: #f472b6;
-  --glow: rgba(236, 72, 153, 0.55);
-}
-
 .social-facebook {
-  --accent: #60a5fa;
-  --glow: rgba(37, 99, 235, 0.55);
+  --accent: #1877f2;
+  --glow: rgba(24, 119, 242, 0.45);
 }
 
-.social-threads {
-  --accent: #c084fc;
-  --glow: rgba(168, 85, 247, 0.55);
+.social-instagram {
+  --accent: #e1306c;
+  --glow: rgba(225, 48, 108, 0.45);
+}
+
+.social-x {
+  --accent: #111111;
+  --glow: rgba(17, 17, 17, 0.25);
 }
 
 .social-tiktok {
-  --accent: #22d3ee;
-  --glow: rgba(34, 211, 238, 0.5);
+  --accent: #111111;
+  --glow: rgba(37, 244, 238, 0.45);
 }
 
-.social-tiktok .social-icon {
-  color: #fff;
+.social-youtube {
+  --accent: #ff0000;
+  --glow: rgba(255, 0, 0, 0.40);
+}
+
+.social-waze {
+  --accent: #33ccff;
+  --glow: rgba(51, 204, 255, 0.45);
 }
 
 .social-link-label {
